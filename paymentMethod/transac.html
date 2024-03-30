@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="transac_style.css">
+  <script src="transac_script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <form action="">
+      <div class="row">
+        <div class="col">
+          <h3 class="title">Payment</h3>
+          <input type="radio" id="card-radio" name="payment" onclick="togglePaymentFormat()" class="card-input" checked>
+          <label for="card-radio"class="card-btn">Card</label>
+          <input type="radio" id="gcash-radio" name="payment" onclick="togglePaymentFormat()"class="gcash-input">
+          <label for="gcash-radio"class="gcash-btn">GCash</label>
+          <div class="inputBox" id="card-format">
+            <span>Cards Accepted:</span>
+            <img src="card_img.png" alt="">
+            <span>Name on Card:</span>
+            <input type="text">
+            <span>Credit Card Number:</span>
+            <input type="number">
+            <div class="expiry-cvv-container">
+              <span>Expiration:</span>
+              <input type="text" placeholder="mm/yy">
+              <span>CVV:</span>
+              <input type="text" placeholder="CVV">
+            </div>
+          </div>
+          <div class="inputBox" id="gcash-format" style="display:none;">
+            <span>GCash Account Number:</span>
+            <input type="number" id="gcash-number">
+            <div class="qr-code-text">Or Scan this QR Code</div>
+            <div class="qr-code-container">
+              <img id="qr-code" src="qr.png" alt="QR code">
+            </div>
+          </div>
+          <div class="inputBox" id="google-format" style="display:none;">
+            <span>GCash Account Number:</span>
+            <input type="number" id="gcash-number">
+            <div class="qr-code-text">Or Scan this QR Code</div>
+            <div class="qr-code-container">
+              <img id="qr-code" src="qr.png" alt="QR code">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal">
+        <button type="submit" class="btn" onclick="openPopup(event)">Proceed to Checkout</button>
+        <div class="popup" id="popup">
+          <img src="blueCheck.png" >
+          <h2>Thank You!</h2>
+          <p>Transaction is Successful.</p>
+          <button type="button" onclick="closePopup()">OK</button>
+        </div>
+      </div>
+    </form>
+   
+
+  </div>
+  <footer class="footer">
+    <div class="footer-content">
+        &copy; 2024 Pokémon. All images used are owned by Niantic. This project is for educational purposes only and no copyright infringement is intended. <img src="logo.png" ></div>
+</footer>
+</body>
+</html>
