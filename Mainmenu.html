@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu</title>
+    <link rel="stylesheet" href="Mainmenu.css">
+    <script src="Mainmenu.js"></script>
+    <script src="intro.js"></script>
+    <link rel=”stylesheet” href=”css/bootstrap.css”>
+    <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
+    
+</head>
+<header>
+    <img src="images/pokemonLogo.png" alt="Pklogo" class="Pklogo">
+    <img src="images/eevee.png" alt="loginIcon" class="loginIcon">
+    <div class="smol">
+        <button id="login" class="login"><a href="login.html">Log in</a></button>
+        <button id="signin" class="Signin"><a href="registration.html">Sign up</a></button>
+    </div>
+    <nav>
+        <button class="top"><a href="#" onclick="homepage();">Home</a></button>
+        <button class="top"><a href="#shop">Shop</a></button>
+        <button class="top"><a href="#event">Events</a></button>
+    </nav>
+    
+</header>
+<body>
+    <a href="#top" class="back-to-top"> 
+        <img src="images/arrow.png" id="back-to-top" alt="back to top" class="arrow">
+    </a>
+    <section id="home">
+        <div class="first-container">
+            <h1 class="Phrase">GOTTA CATCH 'EM ALL!</h1> 
+            <a href="https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo" class="play-now-btn">
+            <button id="play-now" class="play-now">PLAY NOW</button>
+            </a>
+            <img src="images/duskull.png" alt="pokemon" class="duskull">
+        </div>     
+    </section>
+    <section id="shop">
+        
+        <div class="second-container">  
+            <img src="images/pika.png" alt="pikachu" class="pikachu">
+            <h1 class="discount">15% discount for your first Web Store purchase <br>on any item $9.99 or more!</h1>
+            <div class="box-1">
+                <a href="shop.html" class="shop"><div class="btn btn-one">
+                    <span> SHOP NOW >> </span>
+            </div></a>
+        </div>
+        <div class="featured-box">
+            <img src="images/featuredimg.png" alt="Rogue of the Jungle">
+          <a href="shop.html">  <div class="featured-content">
+                <h1>POKECOINS</h1>
+                <button>BUY</button>
+            </div>
+        </div></a>
+        <div class="featured-box-two">
+            <img src="images/featuredimgtwo.png" alt="Rogue of the Jungle">
+            <a href="shop.html">  <div class="featured-content-two">
+                <h1>ITEM BOXES</h1>
+                <button>BUY</button>
+            </div> 
+        </div></a>
+        </div>
+    </section>
+    <section  id="event" >
+        <div class="third-container">
+        <h1 class="title-2nd">What's Happening? </h1>
+        <a href="https://pokemongolive.com/events/indonesia-journey-surabaya" target="_blank" class="card-link">
+            <div class="grid-card-one">
+                <div class="card-one">
+                    <div class="card-image-one">
+                        <img src="images/1stEvent.jpg" alt="pokemon" class="pokemon-img">
+                    </div>
+                    <div class="card-content-one">
+                        <h2 class="card-title-one">Pikachu's  Indonesia Journey: Surabaya</h2>
+                        <p class="card-text-one">
+                            Pikachu's Indonesia Journey, a collaboration event, is  <br>coming to Surabaya, Indonesia! Catch Us on May 11 - 12!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://gofest.pokemongolive.com/sendai" target="_blank" class="card-link">    
+            <div class="grid-card">
+                <div class="card">
+                    <div class="card-image"> 
+                        <img src="images/2ndEvent.jpg" alt="pokemon" class="pokemon-imgimg">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Pokemon GO Fest 2024: Sendai</h2>
+                        <p class="card-text">
+                            May 30 to June 02!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://gofest.pokemongolive.com/madrid" target="_blank" class="card-link">    
+            <div class="grid-cardone">
+                <div class="cardone">
+                    <div class="card-imageone"> 
+                        <img src="images/3rdEvent.jpg" alt="pokemon" class="pokemon-imgone">
+                    </div>
+                    <div class="card-contentone">
+                        <h2 class="card-titleone">Pokemon GO Fest 2024: Madrid</h2>
+                        <p class="card-textone">
+                          Catch us on June 14 - 16!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://gofest.pokemongolive.com/new-york-city" target="_blank" class="card-link">    
+            <div class="grid-cardtwo">
+                <div class="cardtwo">
+                    <div class="card-imagetwo"> 
+                        <img src="images/4thEvent.jpg" alt="pokemon" class="pokemon-imgtwo">
+                    </div>
+                    <div class="card-contenttwo">
+                        <h2 class="card-titletwo">Pokemon GO Fest: New York City </h2>
+                        <p class="card-texttwo">
+                          Catch us on July 5 - 7!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="https://gofest.pokemongolive.com/global" target="_blank" class="card-link">    
+            <div class="grid-cardthree">
+                <div class="cardthree">
+                    <div class="card-imagethree"> 
+                        <img src="images/5thEvent.jpg" alt="pokemon" class="pokemon-imgthree">
+                    </div>
+                    <div class="card-contentthree">
+                        <h2 class="card-titlethree">Pokemon GO Fest: Global</h2>
+                        <p class="card-textthree">
+                            Catch us on July 13 -14!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </section>
+    <section id="fourth"></section>
+    <section class="footer">
+    <div class="foot-container" id="grad">
+        <div class="row">
+            <div class="icons">
+                <a href="https://www.youtube.com/channel/UCA698bls2pjQyiqP9N-iaeg" target="_blank">
+                    <img src="images/youtube.png" alt="youtube" class="yt">
+                </a>
+                <a href="https://www.facebook.com/PokemonGO/" target="_blank" >
+                    <img src="images/facebook.png" alt="facebook" class="fb">
+                </a>
+                <a href="https://www.instagram.com/pokemongoapp/" target="_blank" cla>
+                    <img src="images/instagram.png" alt="instagram" class="insta">
+                </a>
+                <a href="https://www.tiktok.com/@pokemongo" target="_blank">
+                    <img src="images/tik-tok.png" alt="tiktok" class="fb">
+                </a>
+            </div>
+            <div class="col-sm-2">
+                    <ul>
+                        <a class="foot-link text-altlight" href="https://pokemongolive.com/" target=”_blank”>Pokemon GO Live</a>
+                    </ul>
+                    <ul>
+                        <a class="foot-link text-altlight" href="https://pokemongolive.com/leaderboard" target=”_blank”>Leaderboard</a>
+                    </ul>
+                    <ul>
+                        <a class="foot-link text-altlight" href="https://pokemongolive.com/events" target=”_blank”>Events</a>
+                    </ul>
+                    <ul>
+                        <a class="foot-link text-altlight" href="https://pokemongolive.com/news" target=”_blank”>News</a>
+                    </ul>
+                    <ul>
+                        <a class="foot-link text-altlight" href="https://store.pokemongolive.com/support" target=”_blank”>Support</a>
+                    </ul>
+                    <ul>
+                        <a class="foot-link text-altlight" href="https://store.pokemongolive.com/offer-redemption" target=”_blank”>Offer Redemption</a>
+                    </ul>
+                    <ul>
+                        <a class="foot-link text-altlight" href="https://pokemongolive.com/community-day/map" target=”_blank”>Community Day Map</a>
+                    </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="images/ppgu.png" class="foot_logo1">
+                <img src="images/niantic.png" class="foot_logo2">
+            </div>
+        </div>
+        <div class="foot-icons">
+            <a href="https://www.youtube.com/channel/UCA698bls2pjQyiqP9N-iaeg" class="bi bi-youtube text-altlight" target=”_blank”></a>
+            <a href="https://web.facebook.com/PokemonGO/" class="bi bi-facebook text-altlight" target=”_blank”></a>
+            <a href="https://www.instagram.com/pokemongoapp/" class="bi bi-instagram text-altlight" target=”_blank”></a>
+            <a href="https://www.tiktok.com/@pokemongo" class="bi bi-tiktok text-altlight" target=”_blank”></a>
+        </div>
+        <hr>
+        <div class="row">
+           
+            
+            <div class="terms">
+                <a href="https://nianticlabs.com/terms" ><li><button id="services" >Terms of Services</button></li></a>
+                <a href="https://nianticlabs.com/privacy" ><li><button id="terms" >Privacy Policy</button></li></a>
+                <a href="https://nianticlabs.com/ip-policy" ><li><button id="terms" >Copyright Policy</button></li></a>
+                <a href="https://nianticlabs.com/guidelines" ><li><button id="terms" >Player Guidlines</button></li></a>
+            </div>
+             
+        <hr>
+        <div class="foot_text text-altlight">
+            <p>Pokémon GO is playable in English, French, German, Italian, Russian, Japanese, Spanish, Traditional Chinese, Korean, Thai, Brazillian Portuguese, Turkish, and Indonesian.
+            </p><br>
+            <p>
+                ©2023 Niantic, Inc. ©2023 Pokémon. ©1995–2023 Nintendo / Creatures Inc. / GAME FREAK inc. Pokémon and Pokémon character names are trademarks of Nintendo. Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc. Android, Google Play and the Google Play logo are trademarks of Google LLC. During gameplay, please be aware of your surroundings and play safely.
+            </p><br>
+            <p>
+                This webpage is for educational purposes only and no copyright infringement is intended.
+            </p>
+        </div>
+        <img src="images/pokeballfooter.png" alt="pokeball" class="pokeball">
+        <img src="images/meowth.png" alt="meowth" class="meowth">
+        <img src="images/dino.png" alt="dino" class="dino">
+        <img src="images/venonat.png" alt="venonat" class="venonat">
+        <img src="images/mankey.png" alt="mankey" class="mankey">
+        <img src="images/pikapika.png" alt="pika" class="pikapika">
+    </section>
+
+</body>
+
+
+        
+</html>

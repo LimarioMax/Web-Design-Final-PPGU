@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Niantic Registration Page</title>
+    <link rel="stylesheet" href="registration.css"> />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+		<link rel=”stylesheet” href=”css/bootstrap.css”>
+		<link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
+	</head>
+	<header>
+		<img src="images/pokemonLogo.png" alt="Pklogo" class="Pklogo">
+		<img src="images/eevee.png" alt="loginIcon" class="loginIcon"> 
+		<nav>               
+			<button class="top"><a href="Mainmenu.html" onclick="homepage();">Home</button></a>
+			<button class="top"><a href="#shop">Shop</button></a>
+			<button class="top"><a href="#event">Events</a> </button>
+	
+			
+		</nav>
+	</header>
+	<body>
+		<div class="container">
+			<h1>Register Now</h1>
+			<div id="form">
+				<form id="register_form" action="login.html">
+					<div class="input-container input-value">
+						<input type="text" name="username" required />
+						<label for="username">Full Name</label>
+					</div>
+                    <div class="input-container input-value">
+						<input type="text" name="email" required />
+						<label for="email">E-mail Address</label>
+					</div>
+                    <div class="input-container input-value">
+						<input type="password" name="password" required />
+						<label for="password">Password</label>
+					</div>
+					<div class="input-container input-value">
+						<input type="text" name="username" required />
+						<label for="username">IGN</label>
+					</div>
+                    <div class="input-container input-value" >
+						<input type="text" id="playerIdInput" placeholder="Player ID" readonly required>
+					</div>
+
+					<div class="social">
+                        <div class="google" id="googleBtn">
+							<i class="fab fa-google"></i>
+						</div>
+                        <div class="apple" id="appleBtn">
+							<i class="fab fa-apple"></i>
+						</div>
+						<div class="facebook" id="facebookBtn">
+							<i class="fab fa-facebook"></i>
+						</div>
+					</div>
+
+					<div class="checkbox">
+						<label for="check"> I agree to the Terms and Conditions.</label>
+						<input type="checkbox" class="checkbox-color" id="check" name="check" value="stay" />
+					</div>
+
+					<div class="button">
+						<button type="submit" class="btn"><i class="fas fa-arrow-right"><a href="login.html"></a></i></button>
+					</div>
+
+					<div class="bottom-links">
+						<p>Already have an account?
+							<a href="login.html">Login Now.</a>
+						  </p>
+					</div>
+
+				</form>
+
+			</div>
+
+		</div>
+		<script src="scripts1.js"></script>
+  </body>
+  <footer>
+	<div class="social-media">
+		<a href="https://www.youtube.com/channel/UCA698bls2pjQyiqP9N-iaeg"><img src="images/youtube.png" alt="yt" class="yt"></a>
+		<a href="https://www.facebook.com/PokemonGO/"><img src="images/facebook.png" alt="fb" class="fb"></a>
+		<a href="https://www.instagram.com/pokemongoapp/"><img src="images/instagram.png" alt ="ig" class="ig"></a>
+		<a href="https://www.tiktok.com/@pokemongo"><img src="images/tik-tok.png" alt="tt" class="tt"></a>
+	</div>
+	<div class="legal">
+		<ul>
+			<li><a href="#">Terms of Service</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Copyright Policy</a></li>
+			<li><a href="#">Player Guidelines</a></li>
+		</ul>
+	</div>
+	<div class="group-logo">
+		<img src="images/ppgu.png" alt="Group Logo" class="logo">
+	</div>
+	<div class="disclaimer">
+		<p>For educational purposes only and no copyright infringement is intended. Designed by PPGU.</p>
+	</div>
+</footer>
+</html>
+
+

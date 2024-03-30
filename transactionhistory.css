@@ -1,0 +1,143 @@
+@font-face {
+    font-family: pixel;
+    src: url(fonts/Pokemon\ pixel.ttf);
+}
+
+@font-face {
+    font-family: main;
+    src: url(fonts/Futura\ Heavy\ font.ttf);
+}
+
+body {
+    background-color: #212121;
+   
+}
+
+.transaction-history {
+    max-width: 90%; 
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #98C8DE;
+    border-radius: 3%;
+    margin-bottom: 100px;
+}
+
+
+.back {
+    text-align: center;
+    font-family: pixel;
+    color: #e9e61b;
+    letter-spacing: 1px; 
+    padding-bottom: 20px;
+}
+
+.transaction-history h2 {
+    text-align: center;
+    font-family: pixel;
+    color: #11337c;
+    letter-spacing: 3px; 
+}
+
+.transaction-history ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: main;
+}
+
+.transaction-history li {
+    margin-bottom: 10px;
+    border: 1px solid #7a1b1b;
+    padding: 10px;
+}
+
+.transaction-history .date {
+    font-weight: bold;
+    
+}
+
+.transaction-history .description {
+    margin-right: 1px;
+}
+
+.transaction-history .amount {
+    float: right;
+    margin-right: 100px;
+    font-weight: bold;
+}
+
+.ftr {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    padding-top: 10px;
+    
+    
+}
+
+.icons {
+    text-align: center;
+}
+
+.icons img {
+    width: 30px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.logos {
+    text-align: center;
+}
+
+.logos img {
+    width: 80px;
+    height: auto;
+    margin: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: main;
+}
+
+.custom-hr {
+    width: 90%;
+    margin: 10px 0;
+    border: 0;
+    border-top: 1px solid #fff;
+}
+
+.terms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.terms li {
+    margin: 0 20px;
+}
+
+.terms button {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: main;
+
+}
+
+.p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}

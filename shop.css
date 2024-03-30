@@ -1,0 +1,295 @@
+@font-face {
+    font-family: PokemonSolid;
+    src: url(fonts/Pokemon\ Solid.ttf);
+  }
+  
+  @font-face {
+    font-family: pixel;
+    src: url(fonts/Pokemon\ pixel.ttf);
+  }
+  
+  @font-face {
+    font-family: main;
+    src: url(fonts/Futura\ Heavy\ font.ttf);
+  }
+  
+  
+  @keyframes fade-in {
+    from {scale: 0.8; opacity: 0;}
+    to {scale: 1; opacity: 1;}
+    
+  }
+
+  body{
+    margin: 0;
+    font-family: main;
+    
+}
+img{
+    width: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: #2F2F2F;
+}
+button{
+    cursor: pointer;
+}
+.container{
+    width: 900px;
+    margin: auto;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+    transition: 0.5s;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.icon-cart{
+    position: relative;
+}
+.icon-cart span{
+    position: absolute;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    top: 50%;
+    right: -20px;
+}
+.title{
+    font-size: xx-large;
+}
+
+.cartTab{
+    width: 400px;
+    max-width: 100%;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+}
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab .btn button{
+    background-color: #E8BC0E;
+    border: none;
+    font-family: main;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cartTab .btn button.close{
+    background-color: #eee;
+}
+
+.cartTab .listCart {
+    overflow: auto;
+}
+
+.cartTab .listCart::-webkit-scrollbar {
+    width: 0;
+}
+
+.cartTab {
+    right: -400px;
+    transition: 0.5s;
+}
+body.activeTabCart .cartTab {
+    right: 0;
+}
+body.activeTabCart .container {
+    transform: translateX(-250px);
+}
+
+.listProduct .item img {
+    width: 100%;
+    filter: drop-shadow(0 50 px 20px #0009);
+}
+
+.listProduct {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.listProduct .item {
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+
+.listProduct .item h2 {
+    font-weight: 500;
+    font-size: large;
+
+}
+
+.listProduct .item .price {
+    letter-spacing: 3px;
+    font-size: small;
+}
+
+.listProduct .item button {
+    background-color: #353432;
+    color: #eee;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.listProduct .item p{
+    font-weight: 300;
+    color: #0808a0;
+}
+
+/*list cart gilid fddsaf */
+
+.listCart .item img {
+    width: 100%;
+    display: grid;
+    
+}
+
+.listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.listCart .item .quantity{
+    display: flex;
+}
+
+.listCart .item .quantity span {
+    width: 22px;
+    height: 22px;
+    background-color: #eee;
+    color: #2F2F2F;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.listCart .item .minus {
+    margin-right: 10px;
+    
+}
+
+.listCart .item .plus {
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.listCart .item .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #fff;
+}
+
+.listCart .item .quantity span:nth-child(even){
+    color: #c7ccff;
+}
+
+
+.ftr {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    padding-top: 10px;
+    
+    
+}
+
+.icons {
+    text-align: center;
+}
+
+.icons img {
+    width: 30px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.logos {
+    text-align: center;
+}
+
+.logos img {
+    width: 80px;
+    height: auto;
+    margin: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: main;
+}
+
+.custom-hr {
+    width: 90%;
+    margin: 10px 0;
+    border: 0;
+    border-top: 1px solid #fff;
+}
+
+.terms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.terms li {
+    margin: 0 20px;
+}
+
+.terms button {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: main;
+
+}
+
+.p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
