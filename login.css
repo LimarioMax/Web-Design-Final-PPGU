@@ -181,7 +181,7 @@ a {
 }
 
 body {
-  background: url('../images/pokemonwp.jpg') no-repeat fixed;
+  background: url('images/pokemonwp.jpg') no-repeat fixed;
   background-size: cover;
 }
 
